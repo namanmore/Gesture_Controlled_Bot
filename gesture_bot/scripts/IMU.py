@@ -9,7 +9,7 @@ def var(data):
     global a
     a=data.data
 def talker():
-    rospy.init_node('talker', anonymous=True)
+    rospy.init_node('controller', anonymous=True)
     rospy.Subscriber('IMU',Float64,var)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
