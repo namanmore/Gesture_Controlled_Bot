@@ -8,7 +8,7 @@ pub = rospy.Publisher('move', Float64, queue_size=10)
 def var(data):
     global a
     a=data.data
-def talker():
+def controller():
     rospy.init_node('controller', anonymous=True)
     rospy.Subscriber('IMU',Float64,var)
     rate = rospy.Rate(10) # 10hz
@@ -18,6 +18,6 @@ def talker():
         rate.sleep()
 if __name__ == '__main__':
     try:
-        talker()
+        controller()
     except rospy.ROSInterruptException:
         pass
