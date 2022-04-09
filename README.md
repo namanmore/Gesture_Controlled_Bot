@@ -17,10 +17,10 @@ The package was developend in <b>ROS Noetic</b>
 
 ## Using MPU 6050 IMU 
 <p align="center">
-  <img src="https://github.com/namanmore/test/blob/main/Images_README/imu.jpeg" />
+  <img src="https://github.com/namanmore/Gesture_Controlled_Bot/blob/main/Images/imu.jpeg" />
 </p>
 
-On and Arduino Uno, the connections are:  
+On an Arduino Uno, the connections are:  
 * Vcc -> 5V
 * Gnd -> Gnd
 * SCL -> A5
